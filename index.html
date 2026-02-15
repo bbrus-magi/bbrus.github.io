@@ -1,15 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>123</title>
-  <meta name="description" content="123">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bbrus</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-bottom: 1rem;
+  }
+
+  .username {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+</style>
 </head>
 <body>
-  <header>
-    <h1>123</h1>
-    <p>123</p>
-  </header>
+
+<div class="card">
+  <img class="avatar" src="https://avatars.fastly.steamstatic.com/9c67f1ebdc81a4d2e4c8898f23cd59fe84e3fee5_full.jpg" alt="bbrus avatar">
+  <div class="username">bbrus</div>
+</div>
+
 </body>
 </html>
